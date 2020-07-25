@@ -13,8 +13,8 @@ class EmojiMemoryGame{
     
     
     static func createMemoryGame () -> MemoryGame<String> {
-        let emojis  = ["👻", "🚇", "🕷"]
-        return MemoryGame<String>(numberOfPairsOfCards: emojis.count) {  pairIndex in emojis[pairIndex] }
+        let emojis  = ["👻", "🚇", "🕷", "🙁", "🐝"]
+        return MemoryGame<String>(numberOfPairsOfCards: Int.random(in: 2...5)) {  pairIndex in emojis[pairIndex] }
     }
     
     // MARK: - Access to the Model
